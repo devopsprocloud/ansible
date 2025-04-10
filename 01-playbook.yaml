@@ -2,6 +2,6 @@
   hosts: web
   tasks:
     - name: ping te server
-      module.builtin.ping:
-      
+      ansible.builtin.ping:
+
   
