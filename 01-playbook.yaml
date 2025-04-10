@@ -1,0 +1,7 @@
+- name: ping playbook
+  hosts: web
+  tasks:
+    - name: ping te server
+      module.builtin.ping:
+      
+  
