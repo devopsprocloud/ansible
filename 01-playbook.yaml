@@ -1,4 +1,5 @@
 - name: ping playbook
+  become: yes
   hosts: web
   tasks:
     - name: ping te server
