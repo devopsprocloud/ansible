@@ -9,9 +9,9 @@
   #   - name: wishes 
   #     prompt: Please enter the wish 
   #     private: false 
-  vars:
-    person: "Prem from PLAY"
-    wishes: "Morning from Play"
+  # vars:
+  #   person: "Prem from PLAY"
+  #   wishes: "Morning from Play"
   tasks: 
     - name: Checking variable Preferences
       # vars:
@@ -24,6 +24,8 @@
 #- Task level
 # -var_files
 # - Prompt 
+# - PLAY level 
+
 
 
 
