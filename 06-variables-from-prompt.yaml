@@ -1,7 +1,7 @@
-- name: Variable from File
+- name: Variable from Prompt
   hosts: localhost
   vars_prompt:
   tasks: 
-    - name: Variable from File
+    - name: Variable from Prompt
       ansible.builtin.debug:
         msg: "Hi, I'm learning {{course}}, Trainer is {{Trainer}} and duration is {{Duration}}"
