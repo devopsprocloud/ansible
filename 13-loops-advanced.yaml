@@ -1,0 +1,12 @@
+- name: Install packages with loops
+  hosts: localhost
+  become: yes 
+  tasks:
+    - name: Installing {{item}} 
+      ansible.builtin.package:
+        name: "{{item}}"
+      loop:
+        - nginx
+        - git
+        - postfix
+        - mysql
