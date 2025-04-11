@@ -1,9 +1,9 @@
 - name: Variable from Prompt
   hosts: localhost
   vars_prompt:
-    course:
-    Trainer:
-    Duration:
+  - course: course
+  - Trainer: Trainer
+  - Duration: Duration
   tasks: 
     - name: Variable from Prompt
       ansible.builtin.debug:
