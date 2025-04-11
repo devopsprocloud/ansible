@@ -3,10 +3,10 @@
   vars_files:
    - variables.yaml
   vars_prompt:
-    - person: person 
+    - name: person 
       prompt: please enter your name
       private: false
-    - wishes: wishes 
+    - name: wishes 
       prompt: Please enter the wish 
       private: false 
   vars:
