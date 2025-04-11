@@ -3,7 +3,7 @@
   tasks: 
     - name: loop 
       ansible.builtin.debug:
-        msg: "Hell {{item}}"
+        msg: "Hello {{item}}" #Iteam is the default key-word 
       loop:
         - Prem
         - Trixie
