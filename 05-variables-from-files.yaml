@@ -1,8 +1,8 @@
-- name: Variable from TASK
+- name: Variable from File
   hosts: localhost
   vars_files:
     variables.yaml
   tasks: 
-    - name: Variable from TASK
+    - name: Variable from File
       ansible.builtin.debug:
         msg: "Hi, I'm learning {{course}}, Trainer is {{Trainer}} and duration is {{Duration}}"
