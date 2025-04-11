@@ -20,11 +20,12 @@
       ansible.builtin.debug:
         msg: "Hi, {{person}}, Good {{wishes}}"
 
-#- Command Line (Arguments)
-#- Task level
-# -var_files
-# - Prompt 
-# - PLAY level 
+# - from Command Line (Arguments)
+# - from Task level
+# - from -var_files
+# - from Prompt 
+# - from PLAY level 
+# - from Inventory level
 
 
 
