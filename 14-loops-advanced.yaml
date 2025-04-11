@@ -4,8 +4,8 @@
   tasks:
     - name: Managing packages with advanced loops
       ansible.builtin.package:
-        name: "{{item}}"
-        state: present 
+        name: "{{item.name}}"
+        state: "{{item.state}}" 
       loop:
         - {name: 'git', state: 'present'}
         - {name: 'postfix', state: 'absent'}
