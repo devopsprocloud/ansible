@@ -1,0 +1,10 @@
+- name: Loops
+  hosts: localhost 
+  tasks: 
+    - name: loop 
+      ansible.builtin.debug:
+        msg: "Hell {{item}}"
+      loop:
+        - Prem
+        - Trixie
+        - Sumathi
