@@ -8,6 +8,8 @@ localhost
 course="Devops with Azure"
 Trainer="Family"
 Duration="1 year"
+person="Prem from Inventory"
+wishes="Morning from Inventory"
 
 
 [web]
