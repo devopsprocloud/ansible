@@ -1,10 +1,13 @@
 - name: Variable from Prompt
   hosts: localhost
   vars_prompt:
-  - course: course
-  - Trainer: Trainer
-  - Duration: Duration
+  - name: USERNAME
+    prompt: Please enter your username
+    private: false
+  - name: PASSWORD
+    prompt: Please enter your password 
+    private: true
   tasks: 
     - name: Variable from Prompt
       ansible.builtin.debug:
-        msg: "Hi, I'm learning {{course}}, Trainer is {{Trainer}} and duration is {{Duration}}"
+        msg: "Hi, your Username is {{USERNAME}} and Password is {{PASSWORD}}"
