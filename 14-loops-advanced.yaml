@@ -1,0 +1,13 @@
+- name: Managing packages with advanced loopss
+  hosts: localhost
+  become: yes 
+  tasks:
+    - name: Managing packages with advanced loops
+      ansible.builtin.package:
+        name: "{{item}}"
+        state: present 
+      loop:
+        - {name: 'git', state: 'present'}
+        - {name: 'postfix', state: 'absent'}
+        - {name: nginx, state: 'present'}
+        - {name: 'mysql', state: 'absent'}
