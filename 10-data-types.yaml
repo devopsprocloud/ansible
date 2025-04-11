@@ -1,0 +1,31 @@
+- name: data types in Ansible
+  hosts: localhost
+  vars:
+    NAME: "Prem Sagar" # It's a Key Value Pair
+    Skills: # It's a List type. We are giving the list values in Skills variables 
+      - AWS
+      - DevOps
+      - Azure 
+      - VMware
+    Experience: #It's a map type
+      AWS: 4
+      DevOps: 3
+      Azure: 3
+      VMWare: 4
+    Trainer: true #It's aboolean type
+  tasks:
+    - name: Printing Key Value Pair data-type
+      ansible.builtin.debug:
+        msg: "My name is {{NAME}}"
+
+    - name: Printing List data-type
+      ansible.builtin.debug:
+        msg: "My Skills are {{Skills}}"
+
+    - name: Printing Map data-type
+      ansible.builtin.debug:
+        msg: "My Experience is {{Experience}}"
+
+    - name: Printing Boolean data-type
+      ansible.builtin.debug:
+        msg: "Is he a trainer ? {{Trainer}}"
