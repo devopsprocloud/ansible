@@ -1,0 +1,17 @@
+- name: ping teh server 
+  hosts: localhost 
+  tasks:
+    - name: ping the server 
+      ansible.builtin.ping:
+
+    - name: print the message 
+      ansible.builtin.debug:
+        msg: "Hello DEVOPS"
+      tags:
+        - devops 
+
+    - name: print the message. 
+      ansible.builtin.debug:
+        msg: "Hello AWS"
+      tags:
+        - aws
