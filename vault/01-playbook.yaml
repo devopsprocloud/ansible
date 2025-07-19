@@ -2,18 +2,15 @@
   become: yes
   hosts: web
   tasks:
-    - name: ping te server
+    - name: ping the server
       ansible.builtin.ping:
 
     - name: Installing Nginx
       ansible.builtin.package:
         name: nginx
         state: present
+
     - name: Starting Nginx
       ansible.builtin.service:
         name: nginx
         state: started
-    - name: Installing Git 
-      ansible.builtin.package:
-        name: git
-        state: present
